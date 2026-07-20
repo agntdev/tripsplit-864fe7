@@ -1,0 +1,20 @@
+[
+  {
+    "name": "Mark as paid",
+    "steps": [
+      {
+        "expect": [
+          {
+            "method": "sendMessage",
+            "payload": {
+              "text": "Mark a suggested or manual settlement as paid"
+            }
+          }
+        ],
+        "send": {
+          "callback": "settlement:mark_paid"
+        }
+      }
+    ]
+  }
+]
