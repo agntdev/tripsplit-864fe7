@@ -1,0 +1,20 @@
+[
+  {
+    "name": "Confirm expense",
+    "steps": [
+      {
+        "expect": [
+          {
+            "method": "sendMessage",
+            "payload": {
+              "text": "Confirm and save an expense after review"
+            }
+          }
+        ],
+        "send": {
+          "callback": "expense:confirm"
+        }
+      }
+    ]
+  }
+]
